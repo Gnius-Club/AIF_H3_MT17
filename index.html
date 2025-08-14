@@ -1,24 +1,282 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Playbook — 3º Preparatoria — Misión M17: Diagnóstico Full-Stack (Teoría)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
+  <header>
+    <h1><span class="book-icon">📋</span> <strong>Playbook Misión M17: Diagnóstico Full-Stack (Teoría)</strong></h1>
+    <div class="header-widgets">
+      <div class="timer-container">
+        <span id="timer">⏱️ 00:00</span>
+        <button id="startStop">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-input">
+          <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside class="activity-list">
+      <h2>Actividades</h2>
+      <ul>
+        <li><a href="#activity-0">📝</a></li>
+        <li><a href="#activity-1">1</a></li>
+        <li><a href="#activity-2">2</a></li>
+        <li><a href="#activity-3">3</a></li>
+        <li><a href="#activity-4">4</a></li>
+        <li><a href="#activity-5">5</a></li>
+      </ul>
+      <div class="sidebar-info">
+        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+      <!-- 0) De un Vistazo -->
+      <section class="activity-card" id="activity-0">
+        <h2 class="activity-title">📝 De un Vistazo: Misión M17: Diagnóstico Full-Stack (Teoría)</h2>
+        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables.</p>
+        <div class="overview">
+          <section class="overview-block">
+            <h3>Objetivos e “I Can”</h3>
+            <ul>
+              <li>Puedo aplicar una metodología sistemática para diagnosticar 'bugs fantasma' en sistemas full-stack.</li>
+              <li>Puedo utilizar la pestaña 'Network' de las herramientas de desarrollador para trazar el flujo de datos y evidenciar problemas de comunicación entre frontend y backend.</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Secuencia y tiempos</h3>
+            <ol>
+              <li>Saludo Interactivo con IA — 3 min</li>
+              <li>“I Can” + Desafío — 5–7 min</li>
+              <li>AI GYM — 10–12 min</li>
+              <li>Brain Spark — 17–20 min</li>
+              <li>GNIUS STORM — 5 min</li>
+            </ol>
+          </section>
+          <section class="overview-block">
+            <h3>Entregable del Micro-Proyecto</h3>
+            <ul>
+              <li>Un prompt detallado para un LLM describiendo un bug full-stack hipotético, incluyendo comportamiento esperado, observado y datos de la pestaña 'Network', o una plantilla de informe de bugs.</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Criterios de calidad</h3>
+            <ul>
+              <li>Claridad en la descripción del comportamiento esperado y observado.</li>
+              <li>Precisión en la identificación de la discrepancia entre frontend y backend.</li>
+              <li>Inclusión de datos relevantes de la pestaña "Network" como evidencia.</li>
+              <li>Estructura lógica del prompt para facilitar el diagnóstico por IA.</li>
+              <li>Trazabilidad del flujo de datos (clic -> petición -> servidor -> DB -> respuesta).</li>
+            </ul>
+          </section>
+          <section class="overview-block">
+            <h3>Materiales y preparación</h3>
+            <ul>
+              <li>Proyector e internet</li>
+              <li>Herramientas de Desarrollador del navegador (pestaña 'Network'), LLM (ej. ChatGPT, Gemini, Copilot).</li>
+              <li>Ejemplo mínimo listo (alineado al marco de la misión)</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <!-- 1) Saludo Interactivo con IA -->
+      <section class="activity-card" id="activity-1">
+        <h2 class="activity-title">Saludo Interactivo con IA</h2>
+        <p class="activity-purpose">Enmarcar foco y activar a Xolo con perfil/intereses.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+              <p class="step-instructions">Proyectar Diapositiva 2. Conecta el tema con el valor profesional de la caza de bugs y el diagnóstico de sistemas complejos.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Equipo: hoy nos convertimos en detectives de sistemas. En el desarrollo de software, los 'bugs' son inevitables, pero los más desafiantes son los 'bugs fantasma', donde el problema real se esconde. Nuestra misión es aprender a diagnosticarlos sistemáticamente, trazando el flujo de datos para encontrar la causa raíz. Esto es crucial para la calidad y estabilidad de cualquier producto de IA.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+              <p class="step-instructions">Cada estudiante saluda a Xolo con perfil/intereses + misión y herramienta/marco requerido (ej., 'diagnóstico full-stack', 'pestaña Network', 'trazabilidad de datos').</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas, enfocándose en la habilidad de 'diagnóstico full-stack' y el uso de la 'pestaña Network'.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 2) “I Can” + Desafío -->
+      <section class="activity-card" id="activity-2">
+        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
+        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
+              <p class="step-instructions">Proyectar Diapositiva 3. Describe el reto de diagnosticar un 'bug fantasma' y el criterio de éxito: la capacidad de describir el problema de forma que una IA pueda ayudar a diagnosticarlo.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">El reto de hoy es transformar un síntoma en un diagnóstico potencial. Aprenderán a observar un 'bug fantasma' y a describir su comportamiento, trazando su recorrido a través de las capas de un sistema, utilizando la pestaña 'Network' como su principal herramienta de evidencia. El éxito se medirá por la claridad y precisión de su reporte de bug para una IA.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+              <p class="step-instructions">Proyectar Diapositiva 4. 1–2 afirmaciones medibles alineadas al entregable (prompt/plantilla de bug report).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Ej.: “Puedo diagnosticar 'bugs fantasma' usando la pestaña 'Network' para generar un prompt de diagnóstico preciso para un LLM.”</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 3) AI GYM -->
+      <section class="activity-card" id="activity-3">
+        <h2 class="activity-title">AI GYM</h2>
+        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Marco del día</h3>
+              <p class="step-instructions">Proyectar Diapositiva 5. Introduce la 'Metodología de diagnóstico full-stack' y el concepto de 'bug fantasma'. Explica la importancia de la pestaña 'Network' en DevTools.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Hoy nos centraremos en la 'Metodología de diagnóstico full-stack'. Esta es crucial porque muchos problemas no residen donde se manifiestan. El 'bug fantasma' es el síntoma en el frontend, pero la causa está en el backend. Para atraparlo, debemos trazar el flujo de datos: desde el clic del usuario, la petición de red, la lógica del servidor, la base de datos y la respuesta. La pestaña 'Network' de las herramientas de desarrollador es su lupa de detective. Errores comunes incluyen asumir que el problema está solo en el frontend o no verificar la comunicación de red. Evítenlos, siempre empiecen por la red.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 6. Demuestra un ejemplo mínimo de un 'bug fantasma' (ej., una petición fallida, un código de estado HTTP inesperado, o datos incorrectos en la respuesta JSON) usando la pestaña 'Network' de DevTools.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Observen este ejemplo: un usuario intenta iniciar sesión, pero recibe un mensaje de error genérico. Al inspeccionar la pestaña 'Network', vemos que la petición de login devuelve un error 500 del servidor, o que los datos de respuesta JSON son incorrectos. Este es un 'bug fantasma' clásico. El frontend muestra un síntoma, pero la causa está en el backend. ¿Ven cómo la pestaña 'Network' nos da la evidencia directa de la comunicación?</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Check rápido</h3>
+              <p class="step-instructions">Proyectar Diapositiva 7. Dos preguntas de verificación sobre el 'bug fantasma' o la pestaña 'Network'.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Pregunta 1: ¿Qué es un 'bug fantasma' y por qué es difícil de diagnosticar? Pregunta 2: ¿Qué tipo de información clave podemos obtener de la pestaña 'Network' para diagnosticar problemas de comunicación?</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 4) Brain Spark -->
+      <section class="activity-card" id="activity-4">
+        <h2 class="activity-title">Brain Spark</h2>
+        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Producción</h3>
+              <p class="step-instructions">Proyectar Diapositiva 8. Los estudiantes, asumiendo el rol de 'Detectives de Sistemas', deben crear un prompt detallado para un LLM (o una plantilla de informe de bugs) describiendo un bug full-stack hipotético. El prompt debe incluir: comportamiento esperado, comportamiento observado, y datos relevantes obtenidos de la pestaña 'Network' (ej., URL de la petición, método HTTP, código de estado, cuerpo de la respuesta/error).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">N/A</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Iteración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 9. Pide una mejora concreta: refinar la descripción del comportamiento observado para que sea más específica, o añadir más datos de la pestaña 'Network' que corroboren la hipótesis del problema.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Antes de cerrar: valida que tu prompt sea lo suficientemente detallado como para que un experto (o una IA) pueda entender el problema sin más preguntas. Asegúrate de que los datos de 'Network' sean específicos y relevantes. Si no, refina la descripción del síntoma y la evidencia.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Evidencia</h3>
+              <p class="step-instructions">Proyectar Diapositiva 10. Solicita la entrega del prompt o plantilla de informe de bug. Puede ser un documento de texto, un archivo Markdown, o una captura de pantalla del prompt en el LLM.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Entrega con nombre: M17_DiagnosticoBug_[TuNombre]. Incluye tu prompt o plantilla de informe de bug. Asegúrate de que la descripción y los datos de 'Network' sean claros y concisos.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 5) GNIUS STORM -->
+      <section class="activity-card" id="activity-5">
+        <h2 class="activity-title">GNIUS STORM</h2>
+        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+              <p class="step-instructions">2–3 personas/equipos muestran su prompt/plantilla, explicando brevemente el 'bug fantasma' hipotético que describieron, la evidencia de la pestaña 'Network' y por qué creen que su prompt es efectivo para un diagnóstico por IA.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Enfoca tu presentación en la decisión clave de cómo describir el bug, la evidencia que obtendrías de la pestaña 'Network' y cómo tu prompt guía a la IA hacia un diagnóstico.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+              <p class="step-instructions">Proyectar Diapositiva 11. Síntesis: 1 aprendizaje clave sobre el diagnóstico de bugs, 1 criterio (ej., el uso de la pestaña Network) que más impactó, y 1 siguiente paso aplicable (ej., aplicar esta metodología en un proyecto real, explorar más herramientas de DevTools).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Síntesis: Aprendimos que diagnosticar un bug no es solo ver el error, sino trazar su camino a través del sistema. El criterio clave que más impactó es la capacidad de la pestaña 'Network' para revelar la comunicación oculta. Siguiente paso aplicado: la próxima vez que encuentren un problema en una aplicación, abran DevTools y revisen la pestaña 'Network'. Es su primera línea de defensa.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
