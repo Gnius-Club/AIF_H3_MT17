@@ -6,24 +6,14 @@
     <title>Playbook-S3-TM17</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  
 </head>
 <body>
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 17 - 3o de Preparatoria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 17 - 3ro de Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="global-timer">⏱️ 40:00</span>
-                <button id="global-start-stop">Start</button>
-                <button id="global-reset">Reset</button>
-            </div>
-            <div class="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle-input">
-                    <span class="slider round"></span>
-                </label>
-                <i class="fas fa-moon"></i>
             </div>
         </div>
     </header>
@@ -40,9 +30,6 @@
             </ul>
         </aside>
         <main class="content">
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
             <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
                 <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
@@ -51,7 +38,7 @@
                 <div class="command-section">
                     <h3>🎯 Objetivo de Aprendizaje</h3>
                     <div class="objective-box">
-                        <p><strong>Los estudiantes podrán:</strong> Usar WebWave y JDoodle para realizar diagnósticos full-stack mediante la lectura de la pestaña Network y comprender el pensamiento diagnóstico y la trazabilidad de errores.</p>
+                        <p><strong>Los estudiantes podrán:</strong> Usar MakeCode y HTML para crear una estructura modular de interfaz para un Gemelo Digital y comprender la traducción de un diseño manual a código jerárquico.</p>
                     </div>
                 </div>
                 <div class="command-section xolo-prompt">
@@ -59,11 +46,8 @@
                     <div class="prompt-box">
                         <div class="prompt-header">
                             <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
-                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
-                                <i class="fas fa-copy"></i> Copiar
-                            </button>
                         </div>
-                        <pre id="main-prompt">Explícame qué es un “bug fantasma” y por qué el síntoma puede engañar (se ve en frontend pero nace en backend). Analicemos la metodología de diagnóstico full-stack: seguir el dato desde el clic → Network → respuesta API → lógica del servidor → vuelta a la UI. Guíame para observar qué “pistas” mirar en la pestaña Network (status code, payload, tiempos, formato), y cómo escribir un prompt de diagnóstico que incluya evidencia.</pre>
+                        <pre id="main-prompt">Guíame a convertir mi diseño en papel en una estructura HTML: secciones, contenedores y componentes (títulos, tarjetas, áreas de datos). Explícame cómo “esqueleto” significa primero estructura y jerarquía antes de detalles. Acompáñame a preparar una descripción clara para que la IA traduzca el plan a HTML (qué secciones quiero, cuántos datos, qué etiquetas, qué placeholders irán después). Termina con una lista de verificación: ¿mi interfaz es entendible sin datos?</pre>
                     </div>
                 </div>
                 <div class="command-section">
@@ -72,17 +56,17 @@
                         <div class="essential-card">
                             <div class="essential-icon">🎓</div>
                             <h4>Concepto Clave</h4>
-                            <p>Pensamiento Diagnóstico: Es como ser un detective de computadoras; en lugar de adivinar qué falló, sigues las pistas del dato desde que haces clic hasta que llega al servidor para encontrar el origen real del problema.</p>
+                            <p>Estructura y Jerarquía: Es como el esqueleto de un edificio; primero definimos dónde van las vigas y los pisos antes de pintar las paredes.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">🔧</div>
                             <h4>Habilidad Técnica</h4>
-                            <p>Usar la pestaña Network del navegador para rastrear cómo viaja la información entre la página web y el servidor.</p>
+                            <p>Crear el esqueleto de una página web usando etiquetas de secciones y tarjetas para organizar datos.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">🧪</div>
                             <h4>Experimentación</h4>
-                            <p>Probar con diferentes códigos de estado (status codes) y formatos JSON para entender las limitaciones de la comunicación entre frontend y backend.</p>
+                            <p>Probar con diferentes distribuciones de tarjetas y secciones para entender cómo cambia la claridad de la información.</p>
                         </div>
                         <div class="essential-card">
                             <div class="essential-icon">💬</div>
@@ -96,13 +80,15 @@
                     <div class="materials-checklist">
                         <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
                         <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
-                        <label><input type="checkbox"> Equipos de cómputo (1 por cada 2 estudiantes)</label>
-                        <label><input type="checkbox"> Acceso a WebWave (https://webwave.me/), JDoodle (https://www.jdoodle.com/), GitHub y LLMs (ChatGPT/Gemini/Claude)</label>
-                        <label><input type="checkbox"> Navegador con herramientas de desarrollador activas</label>
-                        <label><input type="checkbox"> ⚠️ Esta misión usa programación y herramientas de desarrollo web</label>
-                        <label><input type="checkbox"> 📋 Para agregar extensión: No requiere extensión física, usar herramientas nativas del navegador (F12)</label>
+                        <label><input type="checkbox"> Micro:bit (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Smart Science IOT Kit + Sensores extra (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión IOT-Environment instalada</label>
+                        <label><input type="checkbox"> Cuenta activa en ThingSpeak (https://thingspeak.mathworks.com/)</label>
+                        <label><input type="checkbox"> Hojas de papel y lápices para el diseño previo</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode y estructura HTML</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'IOT-Environment' → Agregar</label>
                     </div>
-                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> No aplica hardware físico, pero recuerda mantener tus credenciales de plataformas seguras y cerrar sesión al terminar.</p>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> No doblar los componentes, verificar las conexiones de los sensores al kit IOT y desconectar la batería al terminar.</p>
                 </div>
                 <div class="command-section">
                     <h3>🗓️ Secuencia de la Misión (40 min)</h3>
@@ -120,7 +106,7 @@
                             <div class="timeline-content">
                                 <strong>A.I. Gym</strong>
                                 <span class="time-badge">8 min</span>
-                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre el pensamiento diagnóstico y los bugs fantasma (sin prompt específico).</p>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la traducción de diseño a código y jerarquía estructural (sin prompt específico).</p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -154,9 +140,9 @@
                     <div class="troubleshooting-list">
                         <ul>
                             <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
-                            <li><strong>Si la pestaña Network no muestra nada:</strong> Asegúrate de recargar la página (F5) mientras la consola de desarrollador está abierta.</li>
-<li><strong>Si el código en JDoodle no compila:</strong> Verifica que seleccionaste el lenguaje correcto y que no faltan puntos y comas.</li>
-<li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                            <li><strong>Si el Micro:bit no envía datos:</strong> Verificar que el cable USB esté bien conectado y que la cuenta de ThingSpeak tenga el API Key correcto.</li>
+                            <li><strong>Si el HTML no se ve bien:</strong> Revisar que las etiquetas de apertura y cierre (como &lt;div&gt; y &lt;/div&gt;) estén completas.</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
                         </ul>
                     </div>
                 </div>
@@ -167,7 +153,6 @@
                     <h2>🚀 Actividad 1: Intro a la Misión</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 2:00</span>
-                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -177,14 +162,14 @@
                             <li>Dar la bienvenida con energía.</li>
                             <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
                             <li>Proyecta diapositiva 1 con el I Can Statement.</li>
-                            <li>Motiva: "¡Hoy se convertirán en detectives expertos del código!".</li>
+                            <li>Motiva: "Hoy le daremos una estructura digital a sus ideas de Gemelos Digitales.".</li>
                         </ul>
                     </div>
                     <div class="role-card role-xolo">
                         <h4>🤖 Rol de XOLO</h4>
                         <ul>
                             <li>XOLO ya está listo y conoce a cada estudiante.</li>
-                            <li>Sabe que hoy toca aprender sobre Diagnóstico Full-Stack y Reporte de Bugs.</li>
+                            <li>Sabe que hoy toca aprender sobre Estructura HTML y Jerarquía de Diseño.</li>
                         </ul>
                     </div>
                     <div class="role-card role-student">
@@ -200,8 +185,8 @@
                     <h4>📊 Diapositiva 1: I Can Statement</h4>
                     <div class="slide-content">
                         <p><strong>🎯 Hoy seré capaz de:</strong></p>
-                        <p class="highlight-text">🤖 A rastrear datos en la red para que ningún bug se escape.</p>
-                        <p><strong>Aplicación real:</strong> Los desarrolladores Senior en empresas como Google o Netflix usan estas técnicas para arreglar fallos complejos que no se ven a simple vista.</p>
+                        <p class="highlight-text">🤖 A organizar secciones y contenedores para que la interfaz de su Gemelo Digital sea profesional y clara.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros de software en empresas tecnológicas usan esta tecnología para planificar aplicaciones complejas antes de escribir una sola línea de lógica funcional.</p>
                         <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
@@ -212,7 +197,6 @@
                     <h2>🧠 Actividad 2: A.I. Gym</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 8:00</span>
-                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -230,8 +214,8 @@
                         <p class="xolo-status">✅ XOLO ACTIVO</p>
                         <ul>
                             <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
-                            <li>Explica cómo funciona el rastreo de datos en la pestaña Network.</li>
-                            <li>Introduce el concepto de trazabilidad y bugs fantasma.</li>
+                            <li>Explica cómo convertir un dibujo en papel en secciones, contenedores y componentes de HTML.</li>
+                            <li>Introduce el concepto de jerarquía y por qué el esqueleto de la interfaz debe ser sólido antes de los detalles.</li>
                             <li>Responde dudas sobre los conceptos.</li>
                         </ul>
                     </div>
@@ -239,8 +223,8 @@
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
                             <li>Abrir el chat con XOLO y saludarlo.</li>
-                            <li>Aprender a usar la pestaña Network para ver respuestas de API.</li>
-                            <li>Aprender sobre la diferencia entre errores de frontend y backend.</li>
+                            <li>Aprender a usar etiquetas de estructura para organizar su interfaz.</li>
+                            <li>Aprender sobre la importancia de la jerarquía visual y el orden de los datos.</li>
                             <li>Despejar todas sus dudas preguntando a XOLO.</li>
                         </ul>
                     </div>
@@ -253,14 +237,14 @@
                             <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
                         <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
-                        <p class="highlight-text">🎯 Objetivo: Aprender a usar herramientas de red para diagnosticar errores y entender la trazabilidad.</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar HTML para estructurar un Gemelo Digital y comprender la jerarquía de diseño.</p>
                     </div>
                 </div>
                 
                 <div class="optional-script">
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
-                        <p class="dialogue assistant">"¡Hola a todos! Hoy vamos a subir de nivel nuestras habilidades como desarrolladores. Vamos a aprender el método del detective para encontrar errores que parecen imposibles. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre el diagnóstico full-stack. No necesitan escribir un prompt especial, solo abran el chat en Gnius Space, salúdenlo y empiecen a platicar con él. Él los guiará para entender qué pasa detrás de cámaras cuando una aplicación falla. ¡Pregúntenle todo lo que necesiten!"</p>
+                        <p class="dialogue assistant">Ahora vamos a dar el primer paso para convertir sus ideas en realidad digital. Abran el chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo pasar de un dibujo en papel a un esqueleto de código HTML. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará por qué es tan importante definir la estructura y la jerarquía de su interfaz antes de preocuparse por los colores o los datos reales. ¡Pregúntenle todo lo que necesiten!</p>
                     </div>
                 </div>
             </div>
@@ -270,7 +254,6 @@
                     <h2>💡 Actividad 3: Brain Spark</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 20:00</span>
-                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -279,7 +262,7 @@
                         <ul>
                             <li>Proyecta la diapositiva 3.</li>
                             <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
-                            <li>Entrega por parejas los Equipos de cómputo conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Entrega por parejas los Micro:bits y Kits IOT conforme los alumnos prueben su GCS en el simulador.</li>
                             <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
                         </ul>
                     </div>
@@ -287,7 +270,7 @@
                         <h4>🤖 Rol de XOLO</h4>
                         <p class="xolo-status">✅ XOLO ACTIVO</p>
                         <ul>
-                            <li>Ayuda a desarrollar una idea y un VIBE que aplique el reporte técnico de errores.</li>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique una estructura modular y limpia.</li>
                             <li>Entrega el GCS de la idea del genio.</li>
                             <li>Resuelve errores de sintaxis o lógica.</li>
                         </ul>
@@ -295,10 +278,10 @@
                     <div class="role-card role-student">
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
-                            <li>Trabajar con XOLO una idea y un VIBE para documentar un bug hipotético.</li>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar el layout de su Gemelo Digital.</li>
                             <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
                             <li>Depurar su programa con XOLO si hay errores.</li>
-                            <li>Verificar la consola del navegador y probar.</li>
+                            <li>Conectar el Micro:bit al Kit IOT y probar la visualización básica.</li>
                         </ul>
                     </div>
                 </div>
@@ -307,29 +290,29 @@
                     <div class="slide-content">
                         <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
                         <div class="prompt-box">
-                            <pre>"Ayúdame a redactar un prompt de bug report con Vibe Coding: inventa conmigo un bug full-stack hipotético y descríbelo con: esperado vs observado + evidencia de Network (ruta, método, status, fragmento JSON). Guíame a redactarlo con precisión para que un LLM pueda diagnosticar sin adivinar. Ejecuta: entrega el prompt final (listo para copiar/pegar) y una mini plantilla reutilizable para futuros bugs."</pre>
+                            <pre>"Ayúdame a construir el esqueleto del Gemelo Digital en un Plugin: define layout (header + 2–3 tarjetas + sección de estado). Luego guíame para pedir a la IA un HTML limpio y modular que pueda crecer. Indícame cómo revisar que cada sección corresponde al plan en papel y cómo dejar “espacios” para conectar los datos después."</pre>
                         </div>
                         <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
                         <ul>
-                            <li>¿El reporte de bug describe claramente lo que falló?</li>
-                            <li>¿Qué pasa si el status code es 500 en lugar de 404?</li>
-                            <li>¿Funciona igual el diagnóstico si el JSON está mal formado vs si la ruta es incorrecta?</li>
-                            <li>¿Cómo ayuda la trazabilidad a evitar que 'adivinemos' la solución de un problema?</li>
-                            <li>¿Por qué es importante usar la IA como apoyo para analizar evidencia y no solo para que nos dé la respuesta final?</li>
+                            <li>¿La estructura HTML muestra todas las secciones que dibujaste en papel?</li>
+                            <li>¿Qué pasa si intentas agregar una cuarta tarjeta al layout actual?</li>
+                            <li>¿El diseño se mantiene ordenado tanto en el simulador como en una pantalla más pequeña?</li>
+                            <li>¿Cómo ayuda la jerarquía de etiquetas (títulos vs párrafos) a que un usuario entienda tu Gemelo Digital?</li>
+                            <li>¿Por qué es más eficiente usar una IA como asistente de estructuración en lugar de escribir todo desde cero?</li>
                         </ul>
                     </div>
                 </div>
                 <div class="optional-script">
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
-                        <p class="dialogue assistant">"¡Es hora de crear! Vamos a aplicar lo aprendido para redactar reportes de errores profesionales. Imaginen que están trabajando en una app real y encuentran un bug 'fantasma'. Pídanle a XOLO que los ayude a idear este escenario y a redactar un prompt de reporte usando 'Vibe Coding'. El flujo es: idear el bug con XOLO, definir el VIBE del reporte, generar el GCS técnico y probarlo en sus plataformas. Por ejemplo, podrían simular un error donde un botón de compra no funciona porque el inventario en el servidor está mal. Si tienen dudas sobre los códigos de red o el JSON, ¡pregúntenle a XOLO!"</p>
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a pasar del diseño al código. Primero, usen el prompt en pantalla para que XOLO los ayude a definir el layout de su Gemelo Digital: piensen en un encabezado, tarjetas para los datos y una sección de estado. Por ejemplo, podrían hacer una interfaz para monitorear un invernadero inteligente con tarjetas para temperatura y humedad. Sigan el flujo: ideen con XOLO, definan el VIBE, obtengan su GCS y pásenlo a MakeCode. No olviden verificar su hardware antes de probar. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
                     </div>
                 </div>
                 <div class="challenge-prompt">
                     <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
                     <div class="prompt-box">
                         <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
-                        <p class="challenge-text">"Ya probé con un bug de API. ¿Puedes enseñarme cómo hacer que mi reporte incluya un análisis de latencia y tiempos de respuesta para bugs de rendimiento?"</p>
+                        <p class="challenge-text">"Ya probé con el layout básico. ¿Puedes enseñarme cómo hacer que mi interfaz HTML incluya una barra de progreso que cambie según un valor simulado?"</p>
                     </div>
                 </div>
             </div>
@@ -339,7 +322,6 @@
                     <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
-                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -363,7 +345,7 @@
                         <h4>👦 Rol del Alumno</h4>
                         <ul>
                             <li>Demuestra su programa funcionando a otra pareja.</li>
-                            <li>Explica qué pistas de red identificó bien.</li>
+                            <li>Explica qué secciones y contenedores funcionan bien en su interfaz.</li>
                             <li>Comparte un descubrimiento interesante.</li>
                             <li>Da retroalimentación positiva al compañero.</li>
                         </ul>
@@ -374,12 +356,12 @@
                     <div class="slide-content tps-structure">
                         <div class="tps-phase">
                             <h4>🤔 THINK (30 seg)</h4>
-                            <p>Reflexión individual: ¿Qué pistas de la pestaña Network te ayudaron más a entender el bug? ¿Qué te sorprendió del proceso?</p>
+                            <p>Reflexión individual: ¿Qué contenedores organizan mejor la información de tu Micro:bit? ¿Qué te sorprendió al ver tu dibujo convertido en código?</p>
                         </div>
                         <div class="tps-phase">
                             <h4>👥 PAIR (2 min)</h4>
                             <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
-                            <p class="highlight-text">Frase guía: "Mi reporte documentó errores de status code y JSON. Me sorprendió que el error real estaba en el servidor y no en el botón."</p>
+                            <p class="highlight-text">Frase guía: "Mi interfaz organiza los datos en tarjetas y secciones. Me sorprendió que el código HTML fuera tan parecido a la estructura que dibujé."</p>
                         </div>
                         <div class="tps-phase">
                             <h4>💬 SHARE (2 min)</h4>
@@ -394,7 +376,6 @@
                     <h2>✅ Actividad 5: Entrega de Evidencias</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
-                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -438,6 +419,6 @@
             </div>
         </main>
     </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html></html>
